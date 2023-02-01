@@ -1,12 +1,11 @@
-/* 
-Galeria de fotos:
-1) Restauración edilicia
-2) Restauración pintura de caballete
-3) Restauración mobiliario
-4) Pintura mural
-5) Marquería?
+import React from 'react';
+import { HomeImage } from './HomeImage';
+import Styles from "./Home.module.css";
 
--> Reproducción automática o sólo a partir de hacer click?
--> Pensar en el texto y su forma de renderizado
-
-*/
+export const Home = () => {
+  return (
+    <section id="home" className={Styles.home_container}>
+      <HomeImage />
+    </section>
+  )
+}

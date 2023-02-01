@@ -1,12 +1,14 @@
 import { Header } from './Components/0 - Header/Header'
 import './App.css'
+import { Home } from './Components/1 - Home/Home'
+import { Services } from './Components/2 - Services/Services'
 
 /* 
 Header ----------> Con transition y fija
-Galería ---------> Principal / Home
+Principal -------> Home / Galería
 Servicios -------> Qué ofrecemos
                    Quiénes somos
-Misión ---------> Misión, visión, valores
+                   Misión, visión, valores
 Equipo ----------> 4 cards
 Contacto --------> Mail, formulario de contacto
 Footer ----------> Redes sociales, mail, logo, nombre
@@ -22,7 +24,8 @@ function App() {
   return (
     <div>
       <Header />
-      <hi>Holis</hi>
+      <Home />
+      <Services />
     </div>
   )
 }

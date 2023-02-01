@@ -1,0 +1,31 @@
+.home_container {
+    height: 100vh;
+    background-color: pink;
+}
+
+.image_text_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18em;
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.home_image {
+    position: relative;
+    height: 90%;
+}
+
+/* RESPONSIVE ------------------------------------ */
+@media screen and (max-width: 360px) {
+    .home_container {
+        background-color: pink;
+    }
+
+    .home_image {
+        position: relative;
+        height: 500px;
+    }
+}
