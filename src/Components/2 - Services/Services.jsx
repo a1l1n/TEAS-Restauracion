@@ -1,5 +1,6 @@
 import React from 'react';
 import Styles from "./Services.module.css";
+import { Who } from './Who';
 
 /* 
 Quiénes somos
@@ -12,7 +13,7 @@ export const Services = () => {
   return (
     <section id="services">
         <div className={Styles.services_container}>
-
+          <Who />
         </div>
     </section>
   )

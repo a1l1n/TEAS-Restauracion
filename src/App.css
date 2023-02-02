@@ -5,6 +5,10 @@ x|
 */
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Sora&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: whitesmoke;
   font-family: 'Inter', sans-serif;

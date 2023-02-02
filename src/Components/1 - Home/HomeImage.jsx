@@ -5,9 +5,13 @@ import Styles from "./Home.module.css";
 
 export const HomeImage = () => {
   return (
-    <Parallax className={Styles.home_image} bgImage={image} strenth={800}>
+    <Parallax 
+      className={Styles.home_image} 
+      blur={{ min: -15, max: 11 }}
+      bgImage={image} 
+      strenth={20}>
       <div className={Styles.image_text_container}>
-        <span className={Styles.img_text}>TEAS RESTAURACIÓN</span>
+        <span className={Styles.img_text}>[ TEAS RESTAURACIÓN ]</span>
       </div>
     </Parallax>
   )

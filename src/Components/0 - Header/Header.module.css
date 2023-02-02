@@ -25,8 +25,9 @@
 }
 
 .nav_title h2 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 0.5em;
+    font-weight: bolder;
 }
 
 .nav_logo {
@@ -50,7 +51,7 @@
 }
 
 .nav_menu_link:hover {
-    color: rgb(39, 163, 235);
+    color: rgb(75, 203, 253);
 }
 
 .nav_toggle {
@@ -67,6 +68,10 @@
         align-items: flex-start;
         justify-content: space-between;
         cursor: pointer;
+    }
+
+    .nav_title h2 {
+        letter-spacing: 0.3em;
     }
     
     .nav_show_menu {
@@ -124,11 +129,30 @@
 }
 
 @media screen and (max-width: 360px) {
+    .header {
+        background-color: rgba(32, 32, 32, 0.966);
+        position: fixed;
+    }
+    
     .nav_menu_items {
         margin-top: 3em;
         margin-left: 0;
         font-size: 22px;
     }
+
+    .nav_toggle {
+        width: 2em;
+        height: 1.5em;
+    }
+
+    .clicked_nav_burger:nth-child(1) {
+        transform: rotate(45deg) translate(0.6em, .7em);
+    }
+
+    .clicked_nav_burger:nth-child(3) {
+        transform: rotate(135deg) translate(-0.2em, .4em);
+    } 
+
 }
 
 

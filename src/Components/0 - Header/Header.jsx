@@ -3,9 +3,7 @@ import Logo from "../../assets/teas.png";
 import Styles from "./Header.module.css";
 
 /* 
-Dependiendo del estado: 
-True ----> show_nav_menu, clicked_nav_burger
-False ---> nav_menu, nav_burguer
+BUSCAR UNA NUEVA FUENTE PARA "TEAS"
 */
 
 export const Header = () => {
@@ -15,7 +13,7 @@ export const Header = () => {
     <header className={Styles.header}>
         <nav className={Styles.nav}>
             <div className={Styles.nav_title}>
-                <h2>TEAS RESTAURO</h2>
+                <h2>TEAS</h2>
             </div>
 
             <div className={toggle ? Styles.nav_show_menu : Styles.nav_menu}>
