@@ -1,5 +1,6 @@
 import React from 'react';
 import Styles from "./Services.module.css";
+import { What } from './What';
 import { Who } from './Who';
 
 /* 
@@ -13,6 +14,7 @@ export const Services = () => {
   return (
     <section id="services">
         <div className={Styles.services_container}>
+          <What />
           <Who />
         </div>
     </section>
