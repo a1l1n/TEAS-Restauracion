@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import image from "../../assets/2.jpg";
+import image from "../../assets/0.jpg";
 import Styles from "./Home.module.css";
 
 export const HomeImage = () => {

@@ -1,23 +1,148 @@
 .services_container {
     height: 100vh;
-    background-color: whitesmoke;
     transition: 0.3s;
+    background-color: white;
 }
 
-.who_container, .what_container {
+/* GENERAL COMPONENTS ----------------------------------------- */
+
+.what_container, .materials_container, .who_container {
     height: 100vh;
     width: 90vw;
-    padding-top: 5em;
-    
+    margin: auto 0 auto 9vw;
     display: flex;
-    background-color: pink;
 }
 
-.what_images_container, .what_text_container {
+.what_images_container, .what_text_container, .materials_text_container, .materials_images_container {
     width: 50%;
-    height: 80%;
 }
 
-.what_images_container {
-    background-color: rgba(32, 32, 32, 0.966);
+.what_text_container, .materials_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
+
+.materials_text_container {
+    background-color: white;
+    margin-left: 1em;
+    padding-left: 6em;
+}
+
+.what_text {
+    padding-right: 4em;
+    margin-bottom: 0;
+}
+
+.materials_text {
+    margin-left: 2em;
+}
+
+.what_text li, .materials_text li {
+    margin: 12px
+}
+
+.what_images_container, .materials_images_container {
+    padding: 1em 0 1em 0;
+    background-color: whitesmoke;
+}
+
+.what_span {
+    font-weight: bold;
+    color: rgb(187, 126, 14);
+/*     border-bottom: 1px solid rgb(187, 126, 14); */
+}
+
+/* SEPARATION TEXTS ------------------------------------------- */
+.services_separation_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    font-size: 35px;
+    font-weight: bold;
+    box-shadow: 0px 15px 10px -22px #111;
+}
+ 
+.services_separation_text span {
+    width: 80%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 15px 10px -22px #111;
+/*     color: rgba(0, 0, 0, 0.829);
+    background-color: rgba(245, 245, 245, 0.685); */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+/* CV BUTTON ---------------------------------- */
+.about_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 3em;
+    border: 1px solid gray;
+    margin-left: 8em;
+}
+
+.about_button a {
+    text-decoration: none;
+    color: black;
+}
+
+/* SCROLL ---------------------------------------- */
+.what_div_scroll {
+    position: relative;
+    left: 80%;
+    margin-top: 2em;
+}
+
+.materials_div_scroll {
+    position: relative;
+    display: flex;
+    height: 3em;
+    width: 100%;
+    right: 15%;
+    margin-top: 3em;
+}
+
+/* RESPONSIVE --------------------------------- */
+
+@media screen and (max-width: 800px) {/* ------- */
+    .who_container, .what_container {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {/* -------- */
+    .what_container, .materials_container, .who_container {
+        display: flex;
+        width: 100vw;
+        height: 1200px;
+        flex-direction: column;
+/*         margin: auto 0 auto 9vw; */
+    }
+
+    .services_separation_text span {
+        font-size: 20px;
+        font-weight: 550;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

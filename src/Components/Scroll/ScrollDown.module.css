@@ -1,0 +1,22 @@
+.services_scroll {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.services_scroll a {
+    text-decoration: none;
+    color: rgb(141, 140, 140);
+    transition: 0.4s;
+}
+
+.scroll_icon {
+    font-size: 40px;
+    margin:0;   
+}
+
+.services_scroll a:hover {
+    color: rgba(71, 190, 194, 0.63);
+}
+
