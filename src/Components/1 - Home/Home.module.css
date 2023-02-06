@@ -88,14 +88,15 @@
     }
 
     .social_bar {
-        flex-direction: row;
+        display: none;
+/*         flex-direction: row;
         position: absolute;
         margin: 22em auto 0 auto;
         width: 100vw;
-        justify-content: center;
+        justify-content: center; */
     }
 
-    .social_icon_facebook, .social_icon_instagram, .social_icon_gmail {
+/*     .social_icon_facebook, .social_icon_instagram, .social_icon_gmail {
         background-color: rgba(32, 32, 32, 0.966);
         border-radius: 0;
         transition: 0.3s;
@@ -116,7 +117,7 @@
 
     .social_icon_gmail:hover {
         background-color: #3F60A5;
-    }
+    } */
 }
 
 @media screen and (max-width: 600px) {/* ------------- */

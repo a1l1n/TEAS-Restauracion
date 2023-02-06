@@ -1,7 +1,6 @@
 .services_container {
     height: 100vh;
     transition: 0.3s;
-    background-color: white;
 }
 
 /* GENERAL COMPONENTS ----------------------------------------- */
@@ -13,11 +12,11 @@
     display: flex;
 }
 
-.what_images_container, .what_text_container, .materials_text_container, .materials_images_container {
+.what_images_container, .what_text_container, .materials_text_container, .materials_images_container, .who_container, .who_images_container {
     width: 50%;
 }
 
-.what_text_container, .materials_text_container {
+.what_text_container, .materials_text_container, .who_text_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,12 +24,11 @@
 }
 
 .materials_text_container {
-    background-color: white;
     margin-left: 1em;
     padding-left: 6em;
 }
 
-.what_text {
+.what_text, .who_text_container {
     padding-right: 4em;
     margin-bottom: 0;
 }
@@ -43,9 +41,12 @@
     margin: 12px
 }
 
-.what_images_container, .materials_images_container {
+.what_text li::marker, .materials_text li::marker {
+    color:  rgb(187, 126, 14);;
+}
+
+.what_images_container, .materials_images_container, .who_images_container {
     padding: 1em 0 1em 0;
-    background-color: whitesmoke;
 }
 
 .what_span {
@@ -59,7 +60,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 45vh;
+    height: 50vh;
+/*     height: 100vh; */
     font-size: 35px;
     font-weight: bold;
     box-shadow: 0px 15px 10px -22px #111;
@@ -71,7 +73,7 @@
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0px 15px 10px -22px #111;
-/*     color: rgba(0, 0, 0, 0.829);
+/*  color: rgba(0, 0, 0, 0.829);
     background-color: rgba(245, 245, 245, 0.685); */
     color: white;
     background-color: rgba(0, 0, 0, 0.425);
@@ -84,13 +86,19 @@
     justify-content: center;
     width: 200px;
     height: 3em;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.452);
     margin-left: 8em;
+    transition: 0.4s;
 }
 
 .about_button a {
     text-decoration: none;
     color: black;
+    transition: 0.4s;
+}
+
+.about_button a:hover {
+    color: rgb(218, 144, 7);
 }
 
 /* SCROLL ---------------------------------------- */

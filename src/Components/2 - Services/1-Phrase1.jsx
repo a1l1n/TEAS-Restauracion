@@ -9,7 +9,7 @@ export const Phrase1 = () => {
         className={Styles.phrase_image}
         blur={{ min: -15, max: 11 }}
         bgImage={image}
-        strenth={20}
+        strenth={1000}
         >
         <div className={Styles.services_separation_text}>
             <span>
