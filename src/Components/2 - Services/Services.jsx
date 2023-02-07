@@ -19,3 +19,8 @@ export const Services = () => {
     </section>
   )
 }
+
+/* 
+OBJETIVOS 05/02:
+1) Seleccionar las fotos para cada una de las secciones
+*/

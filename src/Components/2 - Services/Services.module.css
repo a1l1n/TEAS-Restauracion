@@ -1,9 +1,9 @@
 .services_container {
-    height: 100vh;
+    height: auto;
     transition: 0.3s;
 }
 
-/* GENERAL COMPONENTS ----------------------------------------- */
+/* GENERAL COMPONENTS ----------------------------------------------------- */
 
 .what_container, .materials_container, .who_container {
     height: 100vh;
@@ -12,7 +12,7 @@
     display: flex;
 }
 
-.what_images_container, .what_text_container, .materials_text_container, .materials_images_container, .who_container, .who_images_container {
+.what_images_container, .what_text_container, .materials_text_container, .materials_images_container, .who_text_container, .who_images_container {
     width: 50%;
 }
 
@@ -23,14 +23,14 @@
     height: 100%;
 }
 
-.materials_text_container {
-    margin-left: 1em;
-    padding-left: 6em;
-}
-
 .what_text, .who_text_container {
     padding-right: 4em;
     margin-bottom: 0;
+}
+
+.materials_text_container {
+    margin-left: 1em;
+    padding-left: 6em;
 }
 
 .materials_text {
@@ -55,7 +55,7 @@
 /*     border-bottom: 1px solid rgb(187, 126, 14); */
 }
 
-/* SEPARATION TEXTS ------------------------------------------- */
+/* SEPARATION TEXTS ----------------------------------------------------- */
 .services_separation_text {
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@
     background-color: rgba(0, 0, 0, 0.425);
 }
 
-/* CV BUTTON ---------------------------------- */
+/* CV BUTTON -------------------------------------------------------------- */
 .about_button {
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@
     color: rgb(218, 144, 7);
 }
 
-/* SCROLL ---------------------------------------- */
+/* SCROLL ---------------------------------------------------------------- */
 .what_div_scroll {
     position: relative;
     left: 80%;
@@ -114,30 +114,147 @@
     height: 3em;
     width: 100%;
     right: 15%;
-    margin-top: 3em;
+    margin-top: 4em;
 }
 
-/* RESPONSIVE --------------------------------- */
+.who_div_scroll {
+    position: relative;
+    left: 84%;
+    margin-top: 5em;
+} 
 
-@media screen and (max-width: 800px) {/* ------- */
+/* RESPONSIVE -------------------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {/* ------------------------------------ */
+    .what_container, .materials_container, .who_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+    
+    .what_images_container, .what_text_container, .materials_text_container, .materials_images_container, .who_text_container, .who_images_container {
+        width: 90vw;
+    }
+    
+    .materials_container {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* GENERAL --------------------------------------------------------------- */
+    
+    .what_text_container, .materials_text_container, .who_text_container {
+        height: auto;
+        padding: 4em 0em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .what_text_container h1, .materials_text_container h1, .who_text_container h1 {
+        text-align: center;
+    }
+    
+    .what_text, .who_container {
+        padding: 0em 2em;
+    }
+    
+    /* WHAT ------------------------------------------------------------------ */
+    .what_text_container {
+        margin-top: 4em;
+    }
+    
+    /* MATERIAL TEXT --------------------------------------------------------- */
+    
+    .materials_text_container, .materials_images_container {
+        margin: 0;
+        margin: auto 0 auto 9vw;
+    }
+
+    .materials_text {
+        margin: 1em 0em;
+    }
+    
+    .about_button {
+        margin: 1em auto;
+    }
+    
+    /* WHO GENERAL ------------------------------------------------------------ */
+    .who_text_container {
+        width: 80%;
+        margin-top: 3em;
+    }
+    
+    /* IMAGES ----------------------------------------------------------------- */
+    
+    .what_images_container, .materials_images_container, .who_images_container {
+        width: 80vw;
+        background-color: pink;
+    }
+    
+    /* SCROLL ----------------------------------------------------------------- */
+    
+    .what_div_scroll {
+        position: relative;
+        left: auto;
+        margin-top: 4em;
+    }    
+    
+    .materials_div_scroll {
+        width: auto;
+        left: auto;
+        right: 0%;
+        margin-top: 1.5em;
+    }
+    
+    .who_div_scroll {
+        width: auto;
+        left: auto;
+        margin-top: 3em;
+    }
+    
+    /* PARALLEX --------------------------------------------------------------- */
+    .services_separation_text span {
+        font-size: 20px;
+        font-weight: 550;
+    }
+}
+
+@media screen and (max-width: 800px) {/* ----------------------------------- */
     .who_container, .what_container {
         margin: 0;
         width: 100%;
     }
 }
 
-@media screen and (max-width: 360px) {/* -------- */
-    .what_container, .materials_container, .who_container {
-        display: flex;
-        width: 100vw;
-        height: 1200px;
-        flex-direction: column;
-/*         margin: auto 0 auto 9vw; */
+@media screen and (max-width: 360px) {/* ----------------------------------- */
+    .what_div_scroll {
+        position: relative;
+        left: 0%;
+    }    
+
+    .materials_div_scroll {
+        width: auto;
+        margin-top: 2em;
+        left: 0%;
     }
 
-    .services_separation_text span {
-        font-size: 20px;
-        font-weight: 550;
+    .who_div_scroll {
+        width: auto;
+        left: auto;
+        margin-top: 2em;
+    }
+
+    .about_button {
+        margin: 1em auto;
+    }
+
+    .who_text_container {
+        margin-top: 2em;
+        padding-bottom: 1em;
     }
 }
 

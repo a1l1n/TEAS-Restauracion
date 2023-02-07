@@ -11,12 +11,22 @@
     transition: 0.4s;
 }
 
+@keyframes scroll {
+    0% {
+        transform:  translateY(0);
+    }
+    30% {
+        transform: translateY(2rem);
+    }
+}
+
 .scroll_icon {
     font-size: 40px;
-    margin:0;   
+    margin:0;  
 }
 
 .services_scroll a:hover {
     color: rgba(71, 190, 194, 0.63);
+    animation: scroll 4s ease; 
 }
 

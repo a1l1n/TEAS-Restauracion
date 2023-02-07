@@ -20,7 +20,7 @@ export const Header = () => {
                 <ul className={Styles.nav_menu_items}>
                     <li><a href="#home" className={Styles.nav_menu_link}>Principal</a></li>
                     <li><a href="#services" className={Styles.nav_menu_link}>Servicios</a></li>
-                    <li><a href="#team" className={Styles.nav_menu_link}>Equipo</a></li>
+                    <li><a href="#team" className={Styles.nav_menu_link}>Integrantes</a></li>
                     <li><a href="#contact" className={Styles.nav_menu_link}>Contacto</a></li>
                 </ul>
             </div>

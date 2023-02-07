@@ -12,7 +12,7 @@ export const Materials = () => {
         </div>
 
         <div className={Styles.materials_text_container}>
-            <h3>Experiencia práctica en</h3>
+            <h1>Experiencia práctica en</h1>
                 <ul className={Styles.materials_text}>
                     <li>Pétreos</li>
                     <li>Bronces</li>
@@ -25,11 +25,11 @@ export const Materials = () => {
                     <li>Material cerámico</li>
                 </ul>
 
+                <div className={Styles.about_button}>
+                  <a download="" href={CV} className={Styles.about_button_a}>Download Portfolio <FaRegFilePdf className={Styles.about_button_icon}/></a>
+                </div>
             <div className={Styles.materials_div_scroll}>
               <ScrollDown id="#who"/>
-              <div className={Styles.about_button}>
-                <a download="" href={CV} className={Styles.about_button_a}>Download Portfolio <FaRegFilePdf className={Styles.about_button_icon}/></a>
-              </div>
             </div>
         </div>
     </div>

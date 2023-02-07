@@ -42,19 +42,18 @@
     transition: all 0.5s;
 }
 
+.social_icon_facebook, .social_icon_instagram, .social_icon_gmail{
+    background-color: rgba(32, 32, 32, 0.582);
+}
+
 .social_icon_facebook {
-    background-color: #2E406E;
     border-radius: 0 0.3em 0 0;
 }
 
-.social_icon_instagram {
-    background-color: #E83028;
-}
-
 .social_icon_gmail {
-    background-color: #3F60A5;
     border-radius: 0 0 0.3em 0;
 }
+
 
 .social_icon_facebook:hover, .social_icon_instagram:hover, .social_icon_gmail:hover {
     padding-left: 2em;
@@ -62,7 +61,17 @@
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.42);
 }
 
+.social_icon_facebook:hover {
+    background-color: #2E406E;
+}
 
+.social_icon_instagram:hover {
+    background-color: #E83028;
+}
+
+.social_icon_gmail:hover {
+    background-color: #3F60A5;
+}
 /* RESPONSIVE ------------------------------------ */
 @media screen and (max-width: 1000px) {/* ---------- */
     .home_image {
