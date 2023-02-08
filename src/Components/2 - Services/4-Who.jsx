@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollDown } from '../Scroll/ScrollDown';
 import Styles from "./Services.module.css";
+import { WhoSlider } from './Sliders/4-WhoSlider';
 
 export const Who = () => {
   return (
@@ -20,7 +21,7 @@ export const Who = () => {
         </div>
 
         <div className={Styles.who_images_container}>
-            IMÁGENES
+            <WhoSlider />
         </div>
     </div>
   )

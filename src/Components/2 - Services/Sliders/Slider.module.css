@@ -1,0 +1,37 @@
+
+
+/* WHO --------------------------------------------- */
+.slider_container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    margin: auto;
+}
+
+.slider_container h3 {
+    width: 400px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    margin: 0 auto 0 auto;
+    padding: 0.5rem 0;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.slider_img, .slider_img_loaded {
+    max-width: 400px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.slider_img {
+    opacity: 0;
+}
+
+.slider_img_loaded {
+    opacity: 1;
+}
