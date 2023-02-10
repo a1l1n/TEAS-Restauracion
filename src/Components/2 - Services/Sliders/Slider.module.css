@@ -11,15 +11,34 @@
     margin: auto;
 }
 
-.slider_container h3 {
+.slider_description {/* TEXT //////////////////////// */
+    transition: 1s;
+    opacity: 0;
+    min-height: 60px;
+}
+
+.slider_description_loaded {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    min-height: 60px;
     width: 400px;
-    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+
+.slider_container h3, .slider_description_loaded h3 {
+    width: 380px;
+    font-size: 13px;
     font-weight: lighter;
     text-align: center;
-    color: white;
     margin: 0 auto 0 auto;
-    padding: 0.5rem 0;
-    background-color: rgba(0, 0, 0, 0.541);
+    padding: 0.8rem 0;
+    color: white;
+}
+
+.slider_image_container { /* IMG /////////////////////// */
+    margin: 0;
 }
 
 .slider_img, .slider_img_loaded {

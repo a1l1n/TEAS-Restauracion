@@ -6,7 +6,6 @@ export const WhoSlider = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(whoPics[0]);
     const [loaded, setLoaded] = useState(false);
-    console.log("Esto es loaded: ", loaded)
 
     const prev = () => {
         setLoaded(false);
@@ -31,9 +30,11 @@ export const WhoSlider = () => {
   return (
     <div className={Styles.slider_container}>
         <button onClick={prev}>{"<"}</button>
-        <div>
+        <div className={Styles.slider_image_container}>
             <img src={selectedImage.url} alt={selectedImage.alt} className={loaded ? Styles.slider_img_loaded : Styles.slider_img} onLoad={() => setLoaded(true)}/>
-            <h3>{selectedImage.description}</h3>
+            <div  className={loaded ? Styles.slider_description_loaded : Styles.slider_description}>
+                <h3>{selectedImage.description}</h3>
+            </div>
         </div>
         <button onClick={next}>{">"}</button>
     </div>
