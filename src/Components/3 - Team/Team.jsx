@@ -28,10 +28,10 @@ export const Team = () => {
                             </div>
 
                             <div className={Styles.team_card_back}>
-                                <div>
+                                <div className={Styles.team_card_back_title}>
                                     <h3>Perfil Profesional</h3>
                                 </div>
-                                <div>                                
+                                <div className={Styles.team_card_back_profile}>                                
                                 {profile.profile.map((item) => {
                                     return (
                                     <ul>
@@ -40,8 +40,8 @@ export const Team = () => {
                                     )
                                     })} 
                                 </div>
-                                <div>
-                                    <a>CV</a>
+                                <div className={Styles.team_card_back_button}>
+                                    <a>Descargar CV</a>
                                 </div>
                             </div>
                         </div>

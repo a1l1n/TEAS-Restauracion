@@ -1,0 +1,25 @@
+.contact_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_title {
+    text-align: center;
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contact_image {
+    width: 200px;
+    height: 500px;
+    border-radius: 5px 0 0 5px;
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.829)
+}
+
+.contact_form {
+    width: 70%;
+    height: 100vh;
+}
