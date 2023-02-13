@@ -241,6 +241,10 @@
         left: 0%;
     }
 
+    .materials_text_container {
+        margin: auto;
+    }
+
     .who_div_scroll {
         width: auto;
         left: auto;
@@ -249,6 +253,10 @@
 
     .about_button {
         margin: 1em auto;
+    }
+
+    .who_container {
+        padding: 0em;
     }
 
     .who_text_container {

@@ -38,7 +38,6 @@ export const Contact = () => {
 
             <div className={Styles.contact_form}>
                 <h1 className={Styles.contact_title}>Contactanos</h1>
-{/*                 <h3>O podés dejarnos tu mensaje aquí: </h3> */}
                 <form ref={form} onSubmit={sendEmail}>
                     <div className={Styles.contact_form_div}>
                         <div className={Styles.contact_form_label}>
@@ -47,7 +46,6 @@ export const Contact = () => {
                         <input
                         type="text"
                         name="user_name"
-                        /* placeholder="Dejanos tu nombre" */
                         className={Styles.contact_form_input}
                         required
                         />
@@ -55,12 +53,11 @@ export const Contact = () => {
 
                     <div className={Styles.contact_form_div}>
                         <div className={Styles.contact_form_label}>
-                            <label>E-mail</label>
+                            <label>E-mail: </label>
                         </div>
                         <input
                         type="email"
                         name='user_email'
-                        /* placeholder="Dejanos tu e-mail" */
                         className={Styles.contact_form_input}
                         required
                         />
@@ -68,12 +65,11 @@ export const Contact = () => {
 
                     <div className={Styles.contact_form_div}>
                         <div className={Styles.contact_form_label}>
-                            <label className={Styles.contact_form_label}>Asunto</label>
+                            <label className={Styles.contact_form_label}>Asunto: </label>
                         </div>
                         <input
                         type="text"
                         name="user_subject"
-                        /* placeholder="Dejanos el asunto" */
                         className={Styles.contact_form_input}
                         required
                         />
@@ -81,7 +77,7 @@ export const Contact = () => {
 
                     <div className={Styles.contact_form_div}>
                         <div  className={Styles.contact_form_label}> 
-                            <label>Y el mensaje</label>
+                            <label>Y el mensaje: </label>
                         </div>
                        
                         <textarea

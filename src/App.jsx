@@ -10,11 +10,12 @@ import { Contact } from './Components/4 - Contact/Contact';
 Header ----------> Con transition y fija. Que desaparezca de la vista cuando haces scroll hacia abajo
                    Y reaparezca cuando hacés scroll hacia arriba
 Principal -------> Home -> REVISAR Y/O REHACER
-Contacto --------> Mail, formulario de contacto
 Footer ----------> Redes sociales, mail, logo, nombre
 
-* COMBINACIÓN DE FUENTES
-* ORGANIZACIÓN DE IMÁGENES
+OBJETIVOS DE HOY:
+Arreglar las imágenes del Who -> responsive
+Corregir el front de las cards
+
 */
 
 function App() {
