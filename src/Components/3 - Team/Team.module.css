@@ -44,7 +44,6 @@ box-shadow: 0px 15px 10px -22px #111
 .team_card_front, .team_card_back {
     position: absolute;
     backface-visibility: hidden;
-
 }
 
 /* FRONT --------------------------------- */
@@ -53,9 +52,7 @@ box-shadow: 0px 15px 10px -22px #111
     display: flex;
     flex-direction: column;
     align-items: center;  
-    background-color: white;
-    border: 1px solid rgba(55, 114, 129, 0.308);
-/*     background-color: rgba(113, 135, 160, 0.164); */
+    background-image: linear-gradient(185deg, rgba(214,169,56,0.46551120448179273) 67%, rgba(67,108,108,0.20220588235294112) 100%);
 }
 
 .team_card_div_img {
@@ -65,29 +62,38 @@ box-shadow: 0px 15px 10px -22px #111
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     width: 100%;
-/*     background-color: rgba(0, 0, 0, 0.137); */
+}
+
+.team_card_img {
+    margin-top: 1.5em;
+    width: 220px;
+    border-radius: 5px; 
 }
 
 .team_card_div_text {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index:1;
+    width: 220px;
+    height: 100px;
     text-align: center;
+    background-color: rgba(245, 245, 245, 0.822); 
+    box-shadow: 0px 15px 10px -22px #111
 }
 
-.team_card_div_triangle {
-    position: relative;
-    z-index: 0;
-    width: 0; 
-    height: 0; 
-    border: 100px solid transparent;
-    color:  rgba(113, 135, 160, 0.4);
-    border-bottom-color: rgba(113, 135, 160, 0.144);
-    bottom: 11em;
+.team_card_div_text h1 {
+    margin: 0;
+    font-size: 22px;
 }
 
 .team_card_front h2 {
     font-weight: lighter;
     margin: 0;
+    font-size: 20px;
+    color: rgb(189, 125, 8);
 }
 
 /* BACK ------------------------------- */
@@ -99,9 +105,7 @@ box-shadow: 0px 15px 10px -22px #111
     align-items: center;
     margin: 0;
     color: whitesmoke;
-/*     background-color: rgba(228, 149, 4, 0.808); */
-    background-image: linear-gradient(to bottom, rgba(28, 102, 107, 0.774), rgba(28, 102, 107, 0.479));
-/*     background-color: rgba(28, 102, 107, 0.774); */
+    background-image: linear-gradient(to bottom, rgba(28, 102, 107, 0.774), rgba(28, 102, 107, 0.658));
     transform: rotateY(180deg);
 }
 
@@ -110,24 +114,24 @@ box-shadow: 0px 15px 10px -22px #111
     width: 100%;
     margin-bottom: 2em;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.829);
+    background-color: rgba(0, 0, 0, 0.295);
     color: whitesmoke
 }
 
 .team_card_back_profile {
+    height: 250px;
     font-size: 14px;
     margin: 0;
-
 }
 
 .team_card_back_button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 90px;
     width: 150px;
     height: 2em;
-    margin: 1.5em auto;
+    margin: 0 auto 1.5em auto;
     border-radius: 5px;
     border: 1px solid whitesmoke;
 }   
@@ -136,15 +140,6 @@ box-shadow: 0px 15px 10px -22px #111
     margin: 0 0 0.4em 0.2em;
     width: 220px;
 }
-
-.team_card_img {
-    margin-top: 1em;
-    width: 240px;
-    border-radius: 5px;
-/*     border-radius: 50%;  */
-
-}
-
 
 /* RESPONSIVE --------------------------------------------------- */
 @media screen and (max-width: 360px) {

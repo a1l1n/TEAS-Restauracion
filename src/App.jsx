@@ -14,8 +14,6 @@ Footer ----------> Redes sociales, mail, logo, nombre
 
 OBJETIVOS DE HOY:
 Arreglar las imágenes del Who -> responsive
-Corregir el front de las cards
-
 */
 
 function App() {

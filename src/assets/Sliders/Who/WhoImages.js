@@ -1,6 +1,6 @@
 
 import ailin from "./Ailin.jpg";
-/* import marina from "./Marina.jpg"; */
+import marina from "./Marina.png";
 import matilde from "./Matilde1.png";
 import pedro from "./Pedritus.jpg";
 
@@ -11,9 +11,9 @@ const whoPics = [
     description: "Relevamiento de patologías y avance de obra - Confitería El Molino - Año 2020, Progorod S.A."
   },
   {
-    url: ailin, 
+    url: marina, 
     alt: "Marina A. Pellegrini",
-    description: "Retoque pictórico - Retablo de la Parroquia San Ignacio de Loyola - Año 2019"
+    description: "Cateo exploratorio - Anexo del Congreso de la Nacion - Año 2021, PRIE"
   },
   {
     url: matilde,

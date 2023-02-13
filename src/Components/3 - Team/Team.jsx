@@ -24,7 +24,7 @@ export const Team = () => {
                                     <h1>{profile.name}</h1>
                                     <h2>{profile.skill}</h2>
                                 </div>
-                                    <div className={Styles.team_card_div_triangle}></div>
+{/*                                     <div className={Styles.team_card_div_triangle}></div> */}
                             </div>
 
                             <div className={Styles.team_card_back}>
