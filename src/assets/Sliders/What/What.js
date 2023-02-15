@@ -26,17 +26,17 @@ const whatPics = [
     {
         url: congreso1,
         alt: "Congreso",
-        description: "Realización de cateos y estratigrafías - Cúpula del Congreso de la Nación - Año 2020"
+        description: "Consolidación de capa pictórica - Congreso de la Nación - Año 2016, Progorod S.A"
     },
     {
         url: congreso2,
         alt: "Congreso",
-        description: "Restauración de sistema de molduras - Cúpula del Congreso de la Nación - Año 2020"
+        description: "Restauración de sistema de molduras - Cúpula del Congreso de la Nación - Año 2020, Progorod S.A"
     },
     {
         url: congreso3,
         alt: "Congreso",
-        description: "Restauración de rosetones - Bóveda de Cañón Corrido, Congreso de la Nación - Año 2020"
+        description: "Restauración de rosetones - Bóveda de Cañón Corrido, Congreso de la Nación - Año 2020, Progorod S.A"
     },
     {
         url: montserrat,

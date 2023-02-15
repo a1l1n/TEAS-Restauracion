@@ -12,8 +12,6 @@ Header ----------> Con transition y fija. Que desaparezca de la vista cuando hac
 Principal -------> Home -> REVISAR Y/O REHACER
 Footer ----------> Redes sociales, mail, logo, nombre
 
-OBJETIVOS DE HOY:
-Arreglar las imágenes del Who -> responsive
 */
 
 function App() {
