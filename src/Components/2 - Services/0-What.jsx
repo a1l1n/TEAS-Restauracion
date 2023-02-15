@@ -1,5 +1,6 @@
 import React from 'react'; 
 import { ScrollDown } from '../Scroll/ScrollDown';
+import { WhatSlider } from "./Sliders/0-WhatSlider"
 import Styles from "./Services.module.css";
 
 export const What = () => {
@@ -25,10 +26,9 @@ export const What = () => {
         </div>
 
         <div className={Styles.what_images_container}>
-            Images
+            <WhatSlider />
         </div>
     </div>
   )
 }
 
-/*            <ScrollDown  />  */

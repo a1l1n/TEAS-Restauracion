@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import whoPics from "../../../assets/Sliders/Who/WhoImages.js";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Styles from "./Slider.module.css";
 
 export const WhoSlider = () => {
@@ -29,14 +30,14 @@ export const WhoSlider = () => {
 
   return (
     <div className={Styles.slider_container}>
-        <button onClick={prev}>{"<"}</button>
+        <button onClick={prev} className={Styles.slider_left_button}><AiOutlineLeft /></button>
         <div className={Styles.slider_image_container}>
             <img src={selectedImage.url} alt={selectedImage.alt} className={loaded ? Styles.slider_img_loaded : Styles.slider_img} onLoad={() => setLoaded(true)}/>
             <div  className={loaded ? Styles.slider_description_loaded : Styles.slider_description}>
                 <h3>{selectedImage.description}</h3>
             </div>
         </div>
-        <button onClick={next}>{">"}</button>
+        <button onClick={next} className={Styles.slider_right_button}><AiOutlineRight /></button>
     </div>
   )
 }

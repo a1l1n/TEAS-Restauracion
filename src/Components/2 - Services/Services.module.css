@@ -230,6 +230,10 @@
 }
 
 @media screen and (max-width: 360px) {/* ----------------------------------- */
+    .what_images_container, .materials_images_container, .who_images_container {
+        padding: 0;
+    }
+    
     .what_div_scroll {
         position: relative;
         left: 0%;
