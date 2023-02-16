@@ -5,7 +5,7 @@ import mueble from "./3.jpg"
 import consti from "./4.jpg";
 import molino from "./5.png";
 import provincia2 from "./6.jpg";
-import cristo1 from "./7.jpg";
+import cristo1 from "./7.png";
 import cristo2 from "./8.jpg";
 import estrati from "./9.jfif";
 import uru from "./10.jpg";
