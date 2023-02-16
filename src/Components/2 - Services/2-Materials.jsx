@@ -3,12 +3,13 @@ import { ScrollDown } from "../Scroll/ScrollDown";
 import { FaRegFilePdf } from "react-icons/fa";
 import CV from "../../assets/CV-TEAS.pdf";
 import Styles from "./Services.module.css";
+import { MaterialSlider } from './Sliders/2-MaterialSlider';
 
 export const Materials = () => {
   return (
     <div className={Styles.materials_container} id="materials">
         <div className={Styles.materials_images_container}>
-            Images
+            <MaterialSlider />
         </div>
 
         <div className={Styles.materials_text_container}>
