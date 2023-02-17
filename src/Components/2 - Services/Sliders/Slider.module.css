@@ -35,6 +35,7 @@
     margin: 0 auto 0 auto;
     padding: 0.8rem 0;
     color: white;
+    transition: 0.3s;
 }
 
 .slider_image_container { /* IMG /////////////////////// */

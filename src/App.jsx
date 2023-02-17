@@ -12,6 +12,9 @@ Header ----------> Con transition y fija. Que desaparezca de la vista cuando hac
 Principal -------> Home -> REVISAR Y/O REHACER
 Footer ----------> Redes sociales, mail, logo, nombre
 
+REHACER EL FORMULARIO CON LA IMAGEN BLUREADA DE FONDO
+Imagenes de separación -> lazy loading
+
 */
 
 function App() {

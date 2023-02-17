@@ -43,7 +43,8 @@ const materialsPics = [
     },
     {
         url: provincia2,
-        alt: "Reintegración cromática - Salón de las Provincias, Congreso de la Nación - Consulper, Año 2019"
+        alt: "Reintegracion cromática",
+        description: "Reintegración cromática - Salón de las Provincias, Congreso de la Nación - Consulper, Año 2019"
     },
     {
         url: cristo1,

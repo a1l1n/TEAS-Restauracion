@@ -37,6 +37,7 @@ export const Contact = () => {
         <div className={Styles.contact_container}>
 
             <div className={Styles.contact_form}>
+                <div className={Styles.contact_form_filter}></div>
                 <h1 className={Styles.contact_title}>Contactanos</h1>
                 <form ref={form} onSubmit={sendEmail}>
                     <div className={Styles.contact_form_div}>
@@ -98,11 +99,11 @@ export const Contact = () => {
                 </form>
             </div>
 
-            <div className={Styles.contact_image}>
+{/*             <div className={Styles.contact_image}>
                 <div className={Styles.contact_image_description}>
                     <h3>Limpieza de policromía - Recinto del Senado, Congreso de la Nación - Año 2006, Progorod S.A</h3>
                 </div>
-            </div>
+            </div> */}
         </div>
     </section>
   )
