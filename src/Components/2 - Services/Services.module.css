@@ -8,7 +8,7 @@
 .what_container, .materials_container, .who_container {
     height: 100vh;
     width: 90vw;
-    margin: auto 0 auto 9vw;
+    margin: auto;
     display: flex;
 }
 
@@ -21,20 +21,20 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding-right: 2em;
 }
 
 .what_text, .who_text_container {
-    padding-right: 4em;
+    margin-left: 2em;
     margin-bottom: 0;
 }
 
-.materials_text_container {
-    margin-left: 1em;
-    padding-left: 6em;
+.what_text_container h1, .materials_text_container h1 {
+    margin-left: 3em;
 }
 
 .materials_text {
-    margin-left: 2em;
+    margin-left: 6em;
 }
 
 .what_text li, .materials_text li {
@@ -61,7 +61,6 @@
     align-items: center;
     justify-content: center;
     height: 50vh;
-/*     height: 100vh; */
     font-size: 35px;
     font-weight: bold;
     box-shadow: 0px 15px 10px -22px #111;
@@ -73,8 +72,6 @@
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0px 15px 10px -22px #111;
-/*  color: rgba(0, 0, 0, 0.829);
-    background-color: rgba(245, 245, 245, 0.685); */
     color: white;
     background-color: rgba(0, 0, 0, 0.425);
 }
@@ -168,11 +165,6 @@
     }
     
     /* MATERIAL TEXT --------------------------------------------------------- */
-    
-    .materials_text_container, .materials_images_container {
-        margin: 0;
-        margin: auto 0 auto 9vw;
-    }
 
     .materials_text {
         margin: 1em 0em;
@@ -233,6 +225,19 @@
     .what_images_container, .materials_images_container, .who_images_container {
         padding: 0;
     }
+
+    .what_text_container {
+        margin-top: 1em;
+        padding-top: 4em;
+    }
+
+    .what_text_container h1 {
+        margin: 0;
+    }
+
+    .what_text {
+        margin: 0;
+    }
     
     .what_div_scroll {
         position: relative;
@@ -247,6 +252,10 @@
 
     .materials_text_container {
         margin: auto;
+    }
+
+    .materials_text_container h1 {
+        margin: 1em 0 1em 0;
     }
 
     .who_div_scroll {

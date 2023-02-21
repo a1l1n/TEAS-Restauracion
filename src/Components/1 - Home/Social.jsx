@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import Styles from "./Home.module.css";
@@ -13,3 +13,4 @@ export const Social = () => {
     </div>
   )
 }
+ */

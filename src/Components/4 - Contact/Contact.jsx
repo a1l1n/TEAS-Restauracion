@@ -37,7 +37,6 @@ export const Contact = () => {
         <div className={Styles.contact_container}>
 
             <div className={Styles.contact_form}>
-                <div className={Styles.contact_form_filter}></div>
                 <h1 className={Styles.contact_title}>Contactanos</h1>
                 <form ref={form} onSubmit={sendEmail}>
                     <div className={Styles.contact_form_div}>

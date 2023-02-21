@@ -113,31 +113,21 @@ box-shadow: 0px 15px 10px -22px #111
 }
 
 .team_card_back_title {
-    height: 60px;
+    height: 90px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 2em;
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.295);
     color: whitesmoke
 }
 
 .team_card_back_profile {
-    height: 250px;
+    height: 310px;
     font-size: 14px;
     margin: 0;
-}
-
-.team_card_back_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    width: 150px;
-    height: 2em;
-    margin: 0 auto 1.5em auto;
-    border-radius: 5px;
-    border: 1px solid whitesmoke;
-}   
+}  
 
 .team_card_back ul {
     margin: 0 0 0.4em 0.2em;
