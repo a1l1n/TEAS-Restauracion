@@ -14,7 +14,7 @@ const materialsPics = [
     {
         url: ceramica,
         alt: "Restauración de cerámica",
-        description: "Retoque pictórico de pieza cerámica - TEAS, Año 2020"
+        description: "Retoque pictórico de pieza cerámica después de tratamiento de fisura- TEAS, Año 2020"
     },
     {
         url: campo,

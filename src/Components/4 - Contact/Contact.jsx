@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import Styles from "./Contact.module.css";
 
-export const Contact = () => {
+export default function Contact() {
     const form = useRef();
 
      const sendEmail = (e) => {

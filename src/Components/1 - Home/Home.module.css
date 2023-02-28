@@ -17,6 +17,7 @@
 .image_text_container span {
     font-size: 33px;
     color: white;
+    letter-spacing: 0.5em;
 }
 
 .home_image {
@@ -98,48 +99,22 @@
 
     .social_bar {
         display: none;
-/*         flex-direction: row;
-        position: absolute;
-        margin: 22em auto 0 auto;
-        width: 100vw;
-        justify-content: center; */
     }
 
-/*     .social_icon_facebook, .social_icon_instagram, .social_icon_gmail {
-        background-color: rgba(32, 32, 32, 0.966);
-        border-radius: 0;
-        transition: 0.3s;
-    }
-
-    .social_icon_facebook:hover, .social_icon_instagram:hover, .social_icon_gmail:hover {
-        padding: 0.4em;
-        border-radius: 5px;
-    }
-
-    .social_icon_facebook:hover {
-        background-color: #2E406E;
-    }
-
-    .social_icon_instagram:hover {
-        background-color: #E83028;
-    }
-
-    .social_icon_gmail:hover {
-        background-color: #3F60A5;
-    } */
-}
-
-@media screen and (max-width: 600px) {/* ------------- */
-    .home_container {
-        height: 75vh;
-    }
-
-    .home_image {
-        height: 65vh
+    .image_text_container span {
+        letter-spacing: 0.3em;
     }
 }
 
 @media screen and (max-width: 600px) {/* ---------------- */
+    .home_container {
+        height: 75vh;
+    }
+    
+    .home_image {
+        height: 65vh
+    }
+
     .image_text_container {
         margin-top: 20em;
     }
@@ -151,6 +126,11 @@
     .image_text_container span {
         font-size: 30px;
     }
+
+    .image_text_container span {
+        font-size: 26px;
+        letter-spacing: 0.3em;
+    }
 }
 
 @media screen and (max-width: 500px) {/* ------------- */
@@ -160,6 +140,11 @@
 
     .social_bar {
         margin: 12em auto 0 auto;
+    }
+
+    .image_text_container span {
+        font-size: 24px;
+        letter-spacing: 0.3em;
     }
 }
 
@@ -177,10 +162,12 @@
     .image_text_container {
         margin-top: 10em;
         height: 10.5vh;
+        width: auto;
     }
     
     .image_text_container span {
-        font-size: 25px;
+        font-size: 22px;
+        letter-spacing: 0.1em;
     }
 
     .social_bar {

@@ -17,72 +17,72 @@ const workingPics = [
     {
         url: sanIg,
         alt: "Retablos",
-        description: "Tratamiento de fisuras - Retablo del Calvario, San Ignacio de Loyola - Año 2020"
+        description: "Gestión de proyecto, confección de protocolos y realización de tareas de restauración integral durante el proceso de restauración de 5 retablos en San Ignacio de Loyola"
     },
     {
         url: congreso,
         alt: "Mural",
-        description: "Consolidación de capa pictórica -  Recinto del Senado, Congreso de la Nación - Progorod S.A, Año 2019"
+        description: "Tareas de restauración durante el proceso de intervención integral del Recinto del Senado (Congreso de la Nación), como técnicxs especializadxs contratadxs por la empresa Progorod S.A, durante el año 2019"
     },
     {
         url: marquito,
         alt: "Marco",
-        description: "Restauración de marco, aplicación de bol de Armenia - Taller - Año 2021"
+        description: "Tareas de preparación de superficie y proceso de dorado a la hoja en la restauración de un marco antiguo empleando técnica y materiales tradicionales. Trabajo particular en taller durante el año 2020"
     },
     {
         url: congreso2,
         alt: "Rosetones",
-        description: "Restauración de rosetones - Atrio, Congreso de la Nación - Progorod S.A, Año 2019"
+        description: "Tareas de restauración durante el proceso de intervención integral del Atrio (Congreso de la Nación), como técnicxs especializadxs contratadxs por la empresa Progorod S.A, durante el año 2019"
     },
     {
         url: sillitas,
         alt: "Refresh mobiliario",
-        description: "Renovación de mobiliario de uso doméstico - TEAS, Año 2020"
+        description: "Asesoramiento durante el proceso de intervención, gestión y renovación de juego de mobiliario de uso doméstico. Trabajo llevado a cabo en el domicilio particular durante el año 2021"
     },
     {
         url: molino,
         alt: "Molino",
-        description: "Restauración de teselas vítreas y documentación del proceso - Confitería el Molino - Progorod S.A, Año 2019"
+        description: "Tareas de documentación y restauración durante el proceso de intervención en la Prueba Piloto realizada en la Confitería el Molino, contratadxs por la empresa Progorod S.A, durante el año 2019"
     },
     {
         url: congreso3,
         alt: "Congreso",
-        description: "Realización de estratigrafías y cateos - Cúpula, Congreso de la Nación - Progorod S.A, Año 2019"
+        description: "Confección de estratigrafías y cateos, así como tareas de restauración durante el proceso de intervención integral de la Cúpula (Congreso de la Nación). Contratadxs por la empresa Progorod S.A, durante el año 2019"
     },
     {
         url: sanIg2,
         alt: "Santa Teresa",
-        description: "Preparación superficial de moldura - Retablo de Santa Teresa de Avila, San Ignacio de Loyola - Año 2018"
-    },
-    {
-        url: taller, 
-        alt: "Taller",
-        description: "No tengo idea"
+        description: "Gestión de proyecto, confección de protocolos y realización de tareas de restauración integral durante el proceso de restauración de 5 retablos en San Ignacio de Loyola"
     },
     {
         url: congreso4,
         alt: "Congreso",
-        description: "Limpieza de policromía - Recinto del Senado, Congreso de la Nación - Progorod S.A, Año 2006"
+        description: "Tareas de restauración durante el proceso de intervención integral del Recinto del Senado (Congreso de la Nación), como técnicxs especializadxs contratadxs por la empresa Progorod S.A, durante el año 2019"
     },
     {
         url: congreso5,
         alt: "Congreso",
-        description: "Restauración de rosetones - Atrio, Congreso de la Nación - Progorod S.A, Año 2019"
-    },
-    {
-        url: taller2,
-        alt: "Taller",
-        description: "Relevamiento de deterioros en pintura de caballete - Taller - TEAS, Año 2019"
+        description: "Tareas de restauración durante el proceso de intervención integral del Atrio (Congreso de la Nación), como técnicxs especializadxs contratadxs por la empresa Progorod S.A, durante el año 2019"
     },
     {
         url: congreso6,
         alt: "Congreso",
-        description: "Limpieza de policromía - Recinto del Senado, Congreso de la Nación - Progorod S.A, Año 2006"
+        description: "Tareas de restauración durante el proceso de intervención integral del Recinto del Senado (Congreso de la Nación), como técnicxs especializadxs contratadxs por la empresa Progorod S.A, durante el año 2019"
+    },
+    {
+        url: taller2,
+        alt: "Taller",
+        description: "Gestión, confección de documentación integral, proceso de restauración y embalaje de pintura de caballete. Tareas realizadas en taller durante el año 2019"
+    },
+    {
+        url: taller, 
+        alt: "Taller",
+        description: "Asesoramiento y tareas de restauración en diversas obras en soporte papel (como dibujos, pósters, acuarelas), realizadas en taller particular"
     },
     {
         url: sanIsidro,
         alt: "Pintura mural",
-        description: "Confección de trompe d'oeil y pintura mural - TEAS, Año 2021"
+        description: "Asesoramiento, gestión y confección de pintura mural. Ejecución de trompe d'oeil proyecto particular"
     },
 ]
 

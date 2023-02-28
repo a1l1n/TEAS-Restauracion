@@ -4,7 +4,7 @@ import { BsTriangle } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import Styles from "./Footer.module.css";
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <footer className={Styles.footer_box}>
         <div className={Styles.footer_container}>

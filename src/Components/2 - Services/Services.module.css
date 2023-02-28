@@ -5,54 +5,74 @@
 
 /* GENERAL COMPONENTS ----------------------------------------------------- */
 
-.what_container, .materials_container, .who_container {
+.what_container, .materials_container, .who_container, .work_container {
     height: 100vh;
     width: 90vw;
     margin: auto;
     display: flex;
 }
 
-.what_images_container, .what_text_container, .materials_text_container, .materials_images_container, .who_text_container, .who_images_container {
+.what_images_container, .what_text_container, .materials_text_container, .materials_images_container, .who_text_container, .who_images_container, .work_image_container, .work_text_container {
     width: 50%;
+    margin-top: 3em;
 }
 
 .what_text_container, .materials_text_container, .who_text_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    padding-right: 2em;
+}
+
+.work_text_container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.work_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work_text_container {
+    padding: 0 2em 0 3em;
+}
+
+.work_text {
+    height: 150px;
+    margin-top: 1em;
+    padding-bottom: 2em;
 }
 
 .what_text, .who_text_container {
+    margin-bottom: 0;  
+}
+
+.who_text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.what_text_container h1, .materials_text_container h1, .who_text_container h1 {
     margin-left: 2em;
-    margin-bottom: 0;
 }
 
-.what_text_container h1, .materials_text_container h1 {
-    margin-left: 3em;
-}
-
-.materials_text {
-    margin-left: 6em;
+.materials_text_container h1 {
+    margin-top: 3em;
 }
 
 .what_text li, .materials_text li {
-    margin: 12px
+    margin: 12px;
 }
 
 .what_text li::marker, .materials_text li::marker {
-    color:  rgb(187, 126, 14);;
-}
-
-.what_images_container, .materials_images_container, .who_images_container {
-    padding: 1em 0 1em 0;
+    color:  rgb(187, 126, 14);
 }
 
 .what_span {
     font-weight: bold;
     color: rgb(187, 126, 14);
-/*     border-bottom: 1px solid rgb(187, 126, 14); */
 }
 
 /* SEPARATION TEXTS ----------------------------------------------------- */
@@ -105,30 +125,70 @@
     margin-top: 2em;
 }
 
-.materials_div_scroll {
+.materials_div_scroll, 
+.work_div_scroll {
     position: relative;
     display: flex;
     height: 3em;
     width: 100%;
-    right: 15%;
+    right: 10%;
     margin-top: 4em;
+}
+
+.work_div_scroll {
+    margin-top: 17em;
 }
 
 .who_div_scroll {
     position: relative;
-    left: 84%;
+    left: 80%;
     margin-top: 5em;
 } 
 
-/* RESPONSIVE -------------------------------------------------------------- */
+/* WORK GALLERY -------------------------------------------------------------- */
+.services_work_slider {
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+/* RESPONSIVE ---------------------------------------------------------------- */
+
+@media screen and (max-width: 1200px) {/* ------------------------------------ */
+    .what_text_container, .who_text_container {
+        padding-right: 2em;
+    }
+
+    .materials_text_container {
+        padding-left: 2em;
+    }
+}
 
 @media screen and (max-width: 1000px) {/* ------------------------------------ */
-    .what_container, .materials_container, .who_container {
+    .what_container, .materials_container, .who_container, .work_container {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: auto;
         height: auto;
+    }
+
+.work_text_container {
+        flex-direction: column;
+        margin: 0;
+        width: 550px;
+    }
+
+    .work_text {
+        margin-top: 2em;
+    }
+
+    .work_text h1 {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .work_text p {
+        text-align: center;
     }
     
     .what_images_container, .what_text_container, .materials_text_container, .materials_images_container, .who_text_container, .who_images_container {
@@ -153,12 +213,13 @@
     
     .what_text_container h1, .materials_text_container h1, .who_text_container h1 {
         text-align: center;
+        margin-left: 0;
     }
     
-    .what_text, .who_container {
+    .what_text {
         padding: 0em 2em;
     }
-    
+   
     /* WHAT ------------------------------------------------------------------ */
     .what_text_container {
         margin-top: 4em;
@@ -176,14 +237,16 @@
     
     /* WHO GENERAL ------------------------------------------------------------ */
     .who_text_container {
-        width: 80%;
+        width: 100%;
         margin-top: 3em;
     }
     
     /* IMAGES ----------------------------------------------------------------- */
     
     .what_images_container, .materials_images_container, .who_images_container {
-        width: 80vw;
+        width: 98.5vw;
+/*         background-color: rgba(0, 0, 0, 0.733); */
+        margin: 0.5em;
     }
     
     /* SCROLL ----------------------------------------------------------------- */
@@ -194,11 +257,11 @@
         margin-top: 4em;
     }    
     
-    .materials_div_scroll {
+    .materials_div_scroll, .work_div_scroll {
         width: auto;
         left: auto;
         right: 0%;
-        margin-top: 1.5em;
+        margin: 1.5em auto 0 auto;
     }
     
     .who_div_scroll {
@@ -206,7 +269,7 @@
         left: auto;
         margin-top: 3em;
     }
-    
+
     /* PARALLEX --------------------------------------------------------------- */
     .services_separation_text span {
         font-size: 20px;
@@ -214,25 +277,56 @@
     }
 }
 
-@media screen and (max-width: 800px) {/* ----------------------------------- */
-    .who_container, .what_container {
+@media screen and (max-width: 800px) {/* ------------------------------------- */
+    .who_container {
         margin: 0;
-        width: 100%;
+    }
+
+    .who_text {
+        width: 80%;
+    }
+
+    .materials_text_container {
+        padding: 0;
+        margin-bottom: 2em;
+    }
+
+    .what_text_container, .who_text_container {
+        padding-top: 2em;
+        padding-bottom: 0;
+    }
+
+    .work_image_container {
+        margin: 0;
+    }
+
+    .work_div_scroll {
+        margin: 4em 0 0 35%;
+    }
+}
+
+@media screen and (max-width: 600px) {/* --------------------------------------- */
+    .work_text_container {
+        padding: 0;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 360px) {/* ----------------------------------- */
     .what_images_container, .materials_images_container, .who_images_container {
         padding: 0;
+        background-color: transparent;
+        margin: 0;
     }
 
     .what_text_container {
         margin-top: 1em;
         padding-top: 4em;
+        padding-bottom: 0;
     }
 
     .what_text_container h1 {
-        margin: 0;
+        margin: 0 0 1em 0;
     }
 
     .what_text {
@@ -250,8 +344,13 @@
         left: 0%;
     }
 
+    .work_div_scroll {
+        width: auto;
+        margin: 3em 0 0 28%;
+    }
+
     .materials_text_container {
-        margin: auto;
+        margin: auto auto 2em auto;
     }
 
     .materials_text_container h1 {
@@ -276,18 +375,13 @@
         margin-top: 2em;
         padding-bottom: 1em;
     }
+
+    .who_text_container h1 {
+        margin: 0 0 1em 0;
+    }
+
+    .work_text_container {
+        width: 320px;
+        padding: 0;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

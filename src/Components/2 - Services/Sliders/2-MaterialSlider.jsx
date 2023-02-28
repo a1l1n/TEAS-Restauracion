@@ -13,7 +13,7 @@ export const MaterialSlider = () => {
         setTimeout(() => {
             const condition = selectedIndex > 0;
             const nextIndex = condition ? selectedIndex - 1 : materialsPics.length - 1;
-            setSelectedImage(whatPics[nextIndex]);
+            setSelectedImage(materialsPics[nextIndex]);
             setSelectedIndex(nextIndex)
         }, 500)
     }

@@ -2,7 +2,7 @@ import React from 'react';
 import teamPics from "../../assets/Sliders/Team/Team";
 import Styles from "./Team.module.css";
 
-export const Team = () => {
+export default function Team() {
 
   return (
     <section id="team">

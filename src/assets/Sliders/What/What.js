@@ -65,7 +65,7 @@ const whatPics = [
     {
         url: montserrat,
         alt: "Montserrat",
-        desciption: "Proceso de restauración de pintura mural - Parroquia Nuestra Señora de Montserrat - Año 2022 "
+        description: "Proceso de restauración de pintura mural - Parroquia Nuestra Señora de Montserrat - Año 2022 "
     }
 ];
 
