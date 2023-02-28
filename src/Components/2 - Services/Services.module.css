@@ -120,18 +120,16 @@
 
 /* SCROLL ---------------------------------------------------------------- */
 .what_div_scroll {
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
     left: 80%;
     margin-top: 2em;
 }
 
 .materials_div_scroll, 
 .work_div_scroll {
-    position: relative;
     display: flex;
     height: 3em;
-    width: 100%;
-    right: 10%;
     margin-top: 4em;
 }
 
@@ -140,8 +138,8 @@
 }
 
 .who_div_scroll {
-    position: relative;
-    left: 80%;
+    display: flex;
+    justify-content: flex-end;
     margin-top: 5em;
 } 
 
@@ -245,28 +243,28 @@
     
     .what_images_container, .materials_images_container, .who_images_container {
         width: 98.5vw;
-/*         background-color: rgba(0, 0, 0, 0.733); */
         margin: 0.5em;
     }
     
     /* SCROLL ----------------------------------------------------------------- */
     
     .what_div_scroll {
-        position: relative;
-        left: auto;
         margin-top: 4em;
     }    
     
-    .materials_div_scroll, .work_div_scroll {
-        width: auto;
-        left: auto;
-        right: 0%;
+    .materials_div_scroll {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         margin: 1.5em auto 0 auto;
+    }
+
+    .work_div_scroll {
+        justify-content: center;
+        margin: 4em 0 0 0;
     }
     
     .who_div_scroll {
-        width: auto;
-        left: auto;
         margin-top: 3em;
     }
 
@@ -301,7 +299,7 @@
     }
 
     .work_div_scroll {
-        margin: 4em 0 0 35%;
+        margin: 4em 0 0 0;
     }
 }
 
@@ -309,6 +307,11 @@
     .work_text_container {
         padding: 0;
         width: 80%;
+    }
+
+    .work_div_scroll {
+        margin: 4em 0 0 0;
+        left: 31%
     }
 }
 
@@ -346,7 +349,7 @@
 
     .work_div_scroll {
         width: auto;
-        margin: 3em 0 0 28%;
+        margin: 3em auto 0 auto;
     }
 
     .materials_text_container {

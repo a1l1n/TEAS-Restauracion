@@ -143,8 +143,16 @@
     }
 
     .image_text_container span {
-        font-size: 24px;
-        letter-spacing: 0.3em;
+        font-size: 22px;
+        letter-spacing: 0.2em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .image_text_container span {
+        letter-spacing: 0.2;
+        font-size: 22px;
     }
 }
 

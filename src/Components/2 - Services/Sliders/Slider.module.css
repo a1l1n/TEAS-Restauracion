@@ -115,7 +115,7 @@
     }
 
     .slider_left_button, .slider_right_button {
-        color: white;
+        /* color: white; */
         position: relative;
         z-index: 3;
     }
@@ -146,6 +146,19 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .slider_container {
+        width: 100%;
+    }
+
+    .slider_image_container, .slider_img, .slider_img_loaded, .slider_description, .slider_description_loaded {
+        width: 380px;
+    }
+
+    .slider_work_description, .slider_work_description_loaded {
+        width: 320px;
+    }
+}
 
 @media screen and (max-width: 360px) {/* -------------------- */
     .slider_container {
@@ -164,10 +177,6 @@
         max-width: 350px;
         background-color: rgba(0, 0, 0, 0.753);
     }
-
-    .slider_work_description, .slider_work_description_loaded {
-        width: 320px;
-    }
     
     .slider_description h3, .slider_description_loaded h3 {
         font-size: 12px;
@@ -175,6 +184,7 @@
     }
 
     .slider_left_button, .slider_right_button {
+        color: white;
         position: relative;
         z-index: 3;
     }
